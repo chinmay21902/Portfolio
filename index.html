@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="popper.js"></script>
+    <script type="text/javascript" src="bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="Master.css"> -->
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/7c4f698626.js" crossorigin="anonymous"></script>
+  </head>
+  <body>    
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="photos/logo.png" class="logo">
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+           <div class="header-text">
+             <div class="col-lg-6">
+                 <h5><small>Hello, I'm</small><br></h5>
+                  <h3><span>Chinmay</span></h3>
+                 
+                  <h6>UI/UX DESIGNER</h6>
+              </div>  
+           </div>
+       </div>
+    </div>
+
+<!-- About-->
+      <div id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="photos/img2.jpg" alt="Photo">
+            </div>
+              <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <P>Hello there! I'm Chinmay Wade a passionate student pursuing MCA at 
+                  Bharati Vidyapeeth Institute of Management and Information Technology. 
+                  As a budding web developer, I've gained hands-on experience in HTML, CSS, JavaScript, 
+                  and responsive design principles through coursework and personal projects.
+                  Outside of coding, I find fulfillment in volleyball, where I contribute as a dedicated team player.
+                  Also Photography and editing are among my passions, allowing me to capture authentic emotions and stories of people.
+                </P>
+             
+             
+                <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Strength</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+                <!-- <p class="tab-links" onclick="opentab('experiance')">Experiance</p> -->
+                
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li><span>Qick-Learner</span><br>Fast learner with a strong ability to rapidly grasp and apply new concepts.</li>
+                  <li><span>Attentive listener</span><br>Active listning and understanding well.</li>
+                  <li><span>Team Player</span><br>Effective collaborator with a strong commitment to teamwork</li>
+                </ul>
+
+              </div>
+
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li><span>2023-25</span><br>Pursuing MCA from BVIMIT</li>
+                  <li><span>2023</span><br>BSc IT from Pillai Collage</li>
+                  <li><span>2020</span><br>HSC from Kolad Highschool</li>
+                  <li><span>2018</span><br>SSC from Kolad Highschool</li>
+                </ul>
+
+              </div>
+            
+              <!-- <div class="tab-contents" id="experiance">
+                <ul>
+                  <li><span>2020 current</span><br>Designing Web/App interfaces</li>
+                  <li><span>2010</span><br>Designing Web/App interfaces</li>
+                </ul>
+
+              </div> -->
+           
+            </div>
+          </div>
+        </div>
+      </div>
+   
+      <!-------skills-------->
+      <div id="skills">
+        <div class="container">
+          <h1 class="sub-title">Skills</h1>
+          <div class="skills-list">
+            <div>
+              <i class="fa-brands fa-html5"></i>
+              <h2>HTML</h2>
+              <p>Proficient in HTML5 with experience in structuring web content, creating forms, and implementing semantic markup for enhanced SEO and accessibility. Skilled in integrating HTML with CSS for styling and JavaScript for interactive functionality. Familiar with responsive design principles and cross-browser compatibility, ensuring seamless user experiences across devices.
+
+              </p>
+              <a href="#">Learn more</a>
+            </div>
+            <div>
+              <i class="fa-brands fa-css3-alt"></i>
+              <h2>CSS</h2>
+              <p>Proficient in CSS3 for designing responsive and visually appealing web pages. Experienced in using CSS frameworks like Bootstrap for rapid prototyping and cross-browser compatibility. Familiar with CSS animations and transitions to create engaging user experiences. Knowledgeable in CSS preprocessors such as SASS for efficient stylesheet management</p>
+              <a href="#">Learn more</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-database"></i>
+              <h2>DATABASE</h2>
+              <p>Proficient in database management systems such as MySQL and PostgreSQL, with experience in designing and optimizing relational databases. Skilled in writing SQL queries to extract, manipulate, and analyze data effectively. Familiar with database administration tasks including backup and recovery, user management, and performance tuning. Experienced in database normalization principles to ensure data integrity and efficiency.</p>
+              <a href="#">Learn more</a>
+            </div>
+            <div>
+              <i class="fa-brands fa-java"></i>
+              <h2>JAVA</h2>
+              <p>Proficient in Java programming with experience in developing object-oriented applications. Skilled in debugging, troubleshooting, and integrating Java applications with databases and APIs. Familiar with Spring and Hibernate frameworks for backend development.
+
+              </p>
+              <a href="#">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--------projects----------->
+      <div id="projects">
+        <div class="container">
+          <h1 class="sub-title">My Projects</h1>
+          <div class="work-list">
+            <div class="work">
+              <img src="photos/work4.webp" >
+              <div class="layer">
+                <h3>Cake Website</h3>
+                <p>A cake ordering website which offers customization option to customer.  </p>
+                <p>Frontend: HTML, CSS, JavaScript, bootstrap</p>
+                <p>Backend: MYSQL, JAVA</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="photos/work4.png" >
+              <div class="layer">
+                <h3>Music Recommending ChatBot</h3>
+                <p>A Bot which suggest the songs depending on users mood.</p>
+                <p>Frontend: HTML, CSS, JavaScript, bootstrap</p>
+                <p>Backend: PYTHON, DJANGO</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="photos/work3.jpg" >
+              <div class="layer">
+                <h3>Fees Management site</h3>
+                <p>A site that allows user to keep record of fees of students.</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="btn">See more</a>
+        </div>
+      </div>
+
+<!-- --------content---------- -->
+ <div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i>chinmaywade21902@gmail.com</p>
+        <p><i class="fa-solid fa-square-phone"></i>9158234353</p>
+
+        <div class="socal-icons">
+          <a href="https://www.linkedin.com/in/chinmay-wade-374955249/"><i class="fa-brands fa-linkedin"></i></i></a>
+          <a href="https://www.instagram.com/its_.wade_?igsh=MWh4NXh0azJ6aWdzNg=="><i class="fa-brands fa-instagram"></i></i></a>
+          <a href="https://www.facebook.com/chinmay.wade.5?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        <a href="photos/resume.pdf" download class="btn btn2">Download CV</a>
+      </div>
+
+      <div class="contact-right">
+        <form name="submit-to-google-sheet" >
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rews="6" placeholder="Youe Message"></textarea>
+          <button type="submit" class="btn btn2"> Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="copyright">
+    <p>copyright @ Chinmay, Made with <i class="fa-solid fa-heart"></i> by chinmay wade</p>
+  </div>
+ </div>
+
+
+
+
+
+    
+<script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+  
+  function opentab(tabname){
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+
+  }
+
+
+</script>
+
+<script>
+  var sidemenu = document.getElementById("sidemenu");
+
+  function openmenu(){
+    sidemenu.style.right ="0";
+  }
+  function closemenu(){
+    sidemenu.style.right ="-200";
+  }
+</script>
+
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzw_5NQogytdeb_ldq0OgUu61eKXT-aCJ66G60DXk6JwNiAZowr8t5XhNAHbChaHfY-/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg= document.getElementById("msg")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML="Message sent successfully !"
+        setTimeout(function(){
+          msg.innerHTML=""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+   
+  </body>
+</html> 
